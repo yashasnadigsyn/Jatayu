@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WionNewsLinks</title>
+    <link rel="stylesheet" href="../static/styles/jatayumaincss.css">
+    <style>
+    table, th, td {
+        border: 1px solid black;
+        width: 100%;
+    }
+    th, td {
+        padding: 15px;
+        text-align: left;
+    }
+</style>
+</head>
+<body>
+<a href="/"><div class="JatayuLogo"></div></a><h1 style="text-align: center;">Wion News Links</h1><br>
+<br><br>
+    <div id="wionewstable"></div>
+    <script>
+    let data = [`Morning news brief: 33 killed, 43 injured in Afghanistan blast, and more`,`<a href='https://www.wionews.com/world/morning-news-brief-33-killed-43-injured-in-afghanistan-blast-and-more-473100'>link</a>`,`Over seven in 10 people in England had COVID-19: Study`,`<a href='https://www.wionews.com/trending/over-seven-in-10-people-in-england-had-covid-19-study-473092'>link</a>`,`Task is to establish full control over Donbas and southern Ukraine: Russia`,`<a href='https://www.wionews.com/world/tasks-is-to-establish-full-control-over-donbas-and-southern-ukraine-russia-473086'>link</a>`,`Moldy food from government triggers public outcry in Shanghai`,`<a href='https://www.wionews.com/world/moldy-food-from-government-triggers-public-outcry-in-shanghai-473067'>link</a>`,`The newest problem for Trump’s Truth Social is Elon Musk`,`<a href='https://www.wionews.com/world/the-newest-problem-for-trumps-truth-social-is-elon-musk-473062'>link</a>`,`Kremlin says Russian President Vladimir Putin will meet UN chief Guterres`,`<a href='https://www.wionews.com/world/kremlin-says-russian-president-vladimir-putin-will-meet-un-chief-guterres-473057'>link</a>`,`House Republicans send letter to Twitter's board members to preserve all records about Musk's offer`,`<a href='https://www.wionews.com/world/house-republicans-send-letter-to-twitters-board-members-to-preserve-all-records-about-musks-offer-473047'>link</a>`,`What happened this week? Take our quiz`,`<a href='https://www.wionews.com/world/what-happened-this-week-take-our-quiz-473029'>link</a>`,`Top 10 world news: Taiwan developing new advanced missiles, and more`,`<a href='https://www.wionews.com/world/top-10-world-news-taiwan-developing-new-advanced-missiles-and-more-473018'>link</a>`,`Britain to reopen Kyiv embassy in show of support for Ukraine: Boris Johnson`,`<a href='https://www.wionews.com/world/britain-to-reopen-kyiv-embassy-in-show-of-support-for-ukraine-boris-johnson-473006'>link</a>`,`Russia Ukraine crisis: Tens of thousands of Ukrainians still fleeing war, says UN`,`<a href='https://www.wionews.com/world/russia-ukraine-crisis-tens-of-thousands-of-ukrainians-still-fleeing-war-says-un-472997'>link</a>`,`Russian gas embargo will cost Germany almost $190 billion, says Bundesbank`,`<a href='https://www.wionews.com/world/russian-gas-embargo-will-cost-germany-almost-190-billion-says-bundesbank-472991'>link</a>`,`French prosecutors issue international arrest warrant for Ghosn`,`<a href='https://www.wionews.com/world/french-prosecutors-issue-international-arrest-warrant-for-ghosn-472984'>link</a>`,`Pope says June meeting with Russian Orthodox leader is off`,`<a href='https://www.wionews.com/world/pope-says-june-meeting-with-russian-orthodox-leader-is-off-472980'>link</a>`,`Europe's average temperature increased by over two degrees last year`,`<a href='https://www.wionews.com/world/europes-average-temperature-increased-by-over-two-degrees-last-year-472978'>link</a>`,`Thailand party apologises as sexual misconduct cases mount against executive`,`<a href='https://www.wionews.com/world/thailand-party-apologises-as-sexual-misconduct-cases-mount-against-executive-472973'>link</a>`];
+    let htmldata = '<table><tr>';
+    let perrow = 2;
+
+    for (i=0; i<data.length; i++) {
+        htmldata += '<td>'+ data[i] + '</td>';
+        let next = i +1;
+        if (next%perrow == 0 && next!=data.length) {
+            htmldata += '</tr><tr>';
+        }
+    }
+    htmldata += '</tr></table>'
+
+    document.getElementById('wionewstable').innerHTML = htmldata;
+</script>
+</body>
+</html>

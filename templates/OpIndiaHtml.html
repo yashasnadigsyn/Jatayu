@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpIndiaNewsLinks</title>
+    <link rel="stylesheet" href="../static/styles/jatayumaincss.css">
+    <style>
+    table, th, td {
+        border: 1px solid black;
+        width: 100%;
+    }
+    th, td {
+        padding: 15px;
+        text-align: left;
+    }
+</style>
+</head>
+<body>
+<a href="/"><div class="JatayuLogo"></div></a><h1 style="text-align: center;">OpIndia News Links</h1><br>
+<br><br>
+    <div id="opindianewstable"></div>
+    <script>
+    let data = [`Tej Pratap Yadav claims he had a secret meeting in public with Nitish Kumar, says he’s Lord Krishna who would change govt in Bihar`,`<a href='https://www.opindia.com/2022/04/tej-pratap-yadav-secret-meeting-in-public-nitish-kumar-lord-krishna-change-govt-bihar/'>link</a>`,`‘State govt trying to kill me for raising voice against their corrupt ministers’: BJP leader Mohit Kamboj says his car was attacked by Shiv...`,`<a href='https://www.opindia.com/2022/04/bjp-leader-mohit-kamboj-car-attacked-shiv-sena-goons-state-gvt-trying-to-kill-him/'>link</a>`,`Mumbai Police serves notice to MP Navneet Rana, husband for planning to recite Hanuman Chalisa outside ‘Matoshree’, Shiv Sena workers issue threats`,`<a href='https://www.opindia.com/2022/04/mumbai-police-notice-mp-navneet-rana-husband-plan-recite-hanuman-chalisa-matoshree/'>link</a>`,`Hardik Patel says, ‘not joining BJP’ after speculations surfaced, decides to distribute copies of Bhagavad Gita as he expresses ‘hope’ from Congress`,`<a href='https://www.opindia.com/2022/04/gujarat-hardik-patel-not-joining-bjp-hopes-congress-high-command/'>link</a>`,`Pakistan: National Security Committee concludes there was no foreign conspiracy to topple the Imran Khan government`,`<a href='https://www.opindia.com/2022/04/pakistan-no-foreign-conspiracy-to-topple-imran-khan-govt-says-nsc/'>link</a>`,`Maharashtra: Sanjay Raut’s rally used stolen electricity in power minister Nitin Raut’s Nagpur`,`<a href='https://www.opindia.com/2022/04/sanjay-raut-organised-rally-using-stolen-electricity-in-power-ministers-city/'>link</a>`,`Ukraine’s ambassador to Japan to speak at JNU online event, shares misinformation about India’s permission to aid-carrying plane`,`<a href='https://www.opindia.com/2022/04/ukraines-ambassador-to-japan-to-speak-at-jnu-event-shares-misinformation-about-indias-permission-to-aid-carrying-plane/'>link</a>`,`AAP govt in Punjab reveals that it formed SIT against Tajinder Singh Bagga for ‘harming and causing hurt’ to Arvind Kejriwal by his tweets`,`<a href='https://www.opindia.com/2022/04/punjab-sit-formed-to-look-into-remarks-on-kejriwal-by-tajinder-bagga/'>link</a>`,`Entitlement, sycophancy, posts for Gandhis, demand to report directly to Sonia Gandhi: Prashant Kishor gives suggestions for Congress’ revival`,`<a href='https://www.opindia.com/2022/04/prashant-kishor-suggestions-revival-congress-what-he-said/'>link</a>`,`Rajasthan: Hindu temple in Alwar district demolished by bulldozer, over a hundred families made homeless in Rajgarh`,`<a href='https://www.opindia.com/2022/04/rajasthan-hindu-temple-in-alwar-demolished-by-bulldozer-over-a-hundred-families-made-homeless/'>link</a>`];
+    let htmldata = '<table><tr>';
+    let perrow = 2;
+
+    for (i=0; i<data.length; i++) {
+        htmldata += '<td>'+ data[i] + '</td>';
+        let next = i +1;
+        if (next%perrow == 0 && next!=data.length) {
+            htmldata += '</tr><tr>';
+        }
+    }
+    htmldata += '</tr></table>'
+
+    document.getElementById('opindianewstable').innerHTML = htmldata;
+</script>
+</body>
+</html>

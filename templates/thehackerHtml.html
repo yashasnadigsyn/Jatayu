@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCrunchNewsLinks</title>
+    <link rel="stylesheet" href="../static/styles/jatayumaincss.css">
+    <style>
+    table, th, td {
+        border: 1px solid black;
+        width: 100%;
+    }
+    th, td {
+        padding: 15px;
+        text-align: left;
+    }
+</style>
+</head>
+<body>
+<a href="/"><div class="JatayuLogo"></div></a><h1 style="text-align: center;">TechCrunch News Links</h1><br>
+<br><br>
+    <div id="thehackernewstable"></div>
+    <script>
+    let data = [`Can saving trees really turn bitcoin green?`,`<a href='https://techcrunch.com/2022/04/22/can-saving-trees-really-turn-bitcoin-green/'>link</a>`,``,`<a href='https://techcrunch.com/2022/04/22/can-saving-trees-really-turn-bitcoin-green/'>link</a>`,`Alphabet-owned Intrinsic is acquiring fellow robotic software firm Vicarious`,`<a href='https://techcrunch.com/2022/04/22/alphabet-owned-intrinsic-is-acquiring-fellow-robotic-software-firm-vicarious/'>link</a>`,`15 carbon removal projects score $1M each in climate Xprize milestone`,`<a href='https://techcrunch.com/2022/04/22/15-carbon-removal-projects-score-1m-each-in-climate-xprize-milestone/'>link</a>`,`Block Head Jack Dorsey tells us what we already knew`,`<a href='https://techcrunch.com/2022/04/22/jack-dorsey-is-a-block-head/'>link</a>`,`Daily Crunch: Twitter to allow developers to build third-party apps`,`<a href='https://techcrunch.com/2022/04/22/daily-crunch-twitter-to-allow-developers-to-build-third-party-apps/'>link</a>`,`NLRB rules Activision Blizzard’s first union at Raven Software can vote for recognition`,`<a href='https://techcrunch.com/2022/04/22/activision-blizzard-union-vote-raven-software/'>link</a>`,`Report reveals Big Tech’s last minute lobbying to weaken EU rules`,`<a href='https://techcrunch.com/2022/04/22/google-facebook-apple-eu-lobbying-report/'>link</a>`,`TechCrunch+ roundup: Churn rate basics, BNPL fraud, fundraising IP checklist`,`<a href='https://techcrunch.com/2022/04/22/techcrunch-roundup-churn-rate-basics-bnpl-fraud-fundraising-ip-checklist/'>link</a>`,`Finally, we know why there’s a rubber chicken on Twitter`,`<a href='https://techcrunch.com/2022/04/22/twitter-rubber-chicken/'>link</a>`,`A second Staten Island Amazon warehouse is holding a union vote on Monday`,`<a href='https://techcrunch.com/2022/04/22/a-second-staten-island-amazon-warehouse-is-holding-a-union-vote-on-monday/'>link</a>`,`BeReal: Hype or hit? What to know about the Gen Z photo-sharing app climbing the charts`,`<a href='https://techcrunch.com/2022/04/22/bereal-hype-or-hit-what-to-know-about-the-gen-z-photo-sharing-app-climbing-the-charts/'>link</a>`,`Can saving trees really turn bitcoin green?`,`<a href='https://techcrunch.com/2022/04/22/can-saving-trees-really-turn-bitcoin-green/'>link</a>`,`Twitter is testing a ‘CC’ button that will let you turn video captions on or off`,`<a href='https://techcrunch.com/2022/04/22/twitter-testing-cc-button-video-captions/'>link</a>`,`Lapsus$ hackers targeted T-Mobile source code in latest data breach`,`<a href='https://techcrunch.com/2022/04/22/lapsus-hackers-t-mobile/'>link</a>`,`Twitter spotted testing a feature that would let users set status updates`,`<a href='https://techcrunch.com/2022/04/22/twitter-testing-feature-set-status-updates/'>link</a>`,`Instagram tests a Templates feature, which allows you to copy formats from other Reels`,`<a href='https://techcrunch.com/2022/04/22/instagram-tests-a-templates-feature-which-allows-you-to-copy-formats-from-other-reels/'>link</a>`,`Sennheiser cancels your own wheezing, grunting and panting`,`<a href='https://techcrunch.com/2022/04/22/sennheiser-sport-true-earbuds/'>link</a>`,`EdgeDB wants to modernize databases for cutting-edge apps`,`<a href='https://techcrunch.com/2022/04/22/edgedb-wants-to-modernize-databases-for-cutting-edge-apps/'>link</a>`,`10 IP and commercial contract loose ends to tie up before you approach investors`,`<a href='https://techcrunch.com/2022/04/22/10-ip-and-commercial-contract-loose-ends-to-tie-up-before-you-approach-investors/'>link</a>`,`Tech companies are still going public in Asia, but not enough to halt the global IPO slowdown`,`<a href='https://techcrunch.com/2022/04/22/tech-companies-are-still-going-public-in-asia-but-not-enough-to-halt-the-global-ipo-slowdown/'>link</a>`,`Review: The DJI Mic is too expensive to be this meh`,`<a href='https://techcrunch.com/2022/04/22/dji-mic-review/'>link</a>`];
+    let htmldata = '<table><tr>';
+    let perrow = 2;
+
+    for (i=0; i<data.length; i++) {
+        htmldata += '<td>'+ data[i] + '</td>';
+        let next = i +1;
+        if (next%perrow == 0 && next!=data.length) {
+            htmldata += '</tr><tr>';
+        }
+    }
+    htmldata += '</tr></table>'
+
+    document.getElementById('thehackernewstable').innerHTML = htmldata;
+</script>
+</body>
+</html>

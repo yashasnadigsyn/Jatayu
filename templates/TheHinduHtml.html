@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheHinduNewsLinks</title>
+    <link rel="stylesheet" href="../static/styles/jatayumaincss.css">
+    <style>
+    table, th, td {
+        border: 1px solid black;
+        width: 100%;
+    }
+    th, td {
+        padding: 15px;
+        text-align: left;
+    }
+</style>
+</head>
+<body>
+<a href="/"><div class="JatayuLogo"></div></a><h1 style="text-align: center;">TheHindu News Links</h1><br>
+<br><br>
+    <div id="wionewstable"></div>
+    <script>
+    let data = [`BJP threatening people to bulldoze shops, houses: AAP`,`<a href='https://www.thehindu.com/news/cities/Delhi/bjp-threatening-people-to-bulldoze-shops-houses-aap/article65345399.ece'>link</a>`,`Students, staff shouldn't be allowed to enter school premises without thermal scanning in Delhi`,`<a href='https://www.thehindu.com/news/cities/Delhi/students-staff-shouldnt-be-allowed-to-enter-school-premises-without-thermal-scanning-in-delhi/article65344655.ece'>link</a>`,`Feel we are being watched 24x7, say locals at Jahangirpuri’s Jama Masjid`,`<a href='https://www.thehindu.com/news/cities/Delhi/feel-we-are-being-watched-247-say-locals-at-jahangirpuris-jama-masjid/article65345496.ece'>link</a>`,`Post Jahangirpuri violence, locals offer namaz at C-block mosque amid heavy security, barricading`,`<a href='https://www.thehindu.com/news/cities/Delhi/post-jahangirpuri-violence-locals-offer-namaz-at-c-block-mosque-amid-heavy-security-barricading/article65345443.ece'>link</a>`,`Association demands revision in I-T slab for senior citizens`,`<a href='https://www.thehindu.com/news/cities/chennai/association-demands-revision-in-i-t-slab-for-senior-citizens/article65335361.ece'>link</a>`,`Head post offices now accept digital payments`,`<a href='https://www.thehindu.com/news/cities/chennai/head-post-offices-now-accept-digital-payments/article65335730.ece'>link</a>`,`Fresh application filed seeking GI tag for Namakkal Makkal Pattirangal`,`<a href='https://www.thehindu.com/news/national/tamil-nadu/fresh-application-filed-seeking-gi-tag-for-namakkal-makkal-pattirangal/article65345625.ece'>link</a>`,`No fresh COVID-19 infection in Vellore`,`<a href='https://www.thehindu.com/news/cities/chennai/no-fresh-covid-19-infectionin-vellore/article65345875.ece'>link</a>`,`Immediately start fixing potholes as per BBMP’s work order using automatic machine, HC directs contractor`,`<a href='https://www.thehindu.com/news/cities/bangalore/immediately-start-fixing-potholes-as-per-bbmps-work-order-using-automatic-machine-hc-directs-contractor/article65342187.ece'>link</a>`,`BBMP fixes loophole; zonal classification for property tax to be auto-populated`,`<a href='https://www.thehindu.com/news/cities/bangalore/bbmp-fixes-loophole-zonal-classification-for-property-tax-to-be-auto-populated/article65342632.ece'>link</a>`,`Video | 2nd PU exams of 2022 begin in Karnataka`,`<a href='https://www.thehindu.com/news/national/karnataka/video-2nd-pu-exams-of-2022-begin-in-karnataka/article65344225.ece'>link</a>`,`Bengaluru-based doctor in The Ophthalmologist Power List 2022`,`<a href='https://www.thehindu.com/news/cities/bangalore/bengaluru-based-doctor-in-the-ophthalmologist-power-list-2022/article65341104.ece'>link</a>`,`Congress Warangal meet to kick off ‘Save Telangana’ campaign `,`<a href='https://www.thehindu.com/news/national/telangana/congresss-warangal-meet-to-kick-off-save-telangana-campaign/article65342481.ece'>link</a>`,`Municipal councillor axed to death in Mahabubabad`,`<a href='https://www.thehindu.com/news/cities/Hyderabad/municipal-councillor-axed-to-death-in-mahabubabad/article65342436.ece'>link</a>`,`NGT admits petition over illegal mining`,`<a href='https://www.thehindu.com/news/national/telangana/ngt-admits-petition-over-illegal-mining/article65342282.ece'>link</a>`,`Govt. sanctions ₹ 2,679 cr. for three super-speciality hospitals`,`<a href='https://www.thehindu.com/news/national/telangana/govt-sanctions-2679-cr-for-three-super-speciality-hospitals/article65342738.ece'>link</a>`,`Kollam all set to host Kerala University Youth festival from Saturday`,`<a href='https://www.thehindu.com/news/national/kerala/kollam-all-set-to-host-kerala-university-youth-festival-from-saturday/article65344873.ece'>link</a>`,`Protest against K-Rail continues in Kannur`,`<a href='https://www.thehindu.com/news/national/kerala/protest-against-k-rail-continues-in-kannur/article65344796.ece'>link</a>`,`Congress starts relay protest in front of Mayor’s chamber`,`<a href='https://www.thehindu.com/news/national/kerala/congress-starts-relay-protest-in-front-of-mayors-chamber/article65345504.ece'>link</a>`,`It is Palakkad’s turn to settle scores  `,`<a href='https://www.thehindu.com/news/national/kerala/it-is-palakkads-turn-to-settle-scores/article65345282.ece'>link</a>`,`High-rises discharging untreated waste water into Thevara-Perandoor canal`,`<a href='https://www.thehindu.com/news/cities/Kochi/high-rises-discharging-untreated-waste-water-into-thevara-perandoor-canal/article65344764.ece'>link</a>`,`People’s campaign to document impact of tidal flooding gets under way in 14 panchayats in Ernakulam district`,`<a href='https://www.thehindu.com/news/cities/Kochi/peoples-campaign-to-document-impact-of-tidal-flooding-gets-under-way-in-14-panchayats-in-ernakulam-district/article65344629.ece'>link</a>`,`Congress starts relay protest in front of Mayor’s chamber`,`<a href='https://www.thehindu.com/news/national/kerala/congress-starts-relay-protest-in-front-of-mayors-chamber/article65345504.ece'>link</a>`,`Mar Peter Kochupurakkal to be installed Bishop of Palakkad`,`<a href='https://www.thehindu.com/news/national/kerala/mar-peter-kochupurakkal-to-be-installed-bishop-of-palakkad/article65345010.ece'>link</a>`];
+    let htmldata = '<table><tr>';
+    let perrow = 2;
+
+    for (i=0; i<data.length; i++) {
+        htmldata += '<td>'+ data[i] + '</td>';
+        let next = i +1;
+        if (next%perrow == 0 && next!=data.length) {
+            htmldata += '</tr><tr>';
+        }
+    }
+    htmldata += '</tr></table>'
+
+    document.getElementById('wionewstable').innerHTML = htmldata;
+</script>
+</body>
+</html>

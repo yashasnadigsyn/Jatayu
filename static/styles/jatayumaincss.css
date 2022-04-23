@@ -1,0 +1,72 @@
+.JatayuLogo {
+  background-image: url('jatayulogo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left; 
+  width: 25px; 
+  height: 25px;
+  border: 3px solid #000000; 
+  padding: 5px; 
+  cursor: pointer;
+}
+
+.NewsWion {
+  background-image: url('wion.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  border: 8px solid rgb(0, 0, 0);
+  padding: 50px;
+  margin: 1px;
+  cursor: pointer;
+}
+
+.NewsOpIndia {
+  background-image: url('opindia.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  border: 8px solid rgb(0, 0, 0);
+  padding: 50px;
+  margin: 1px;
+  cursor: pointer;
+}
+
+.NewsTheHindu {
+  background-image: url('thehindu.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  border: 8px solid rgb(0, 0, 0);
+  padding: 50px;
+  margin: 1px;
+  cursor: pointer;
+}
+
+.NewsCricket {
+  background-image: url('cricket.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  border: 8px solid rgb(0, 0, 0);
+  padding: 50px;
+  margin: 1px;
+  cursor: pointer;
+}
+
+.NewsTech {
+  background-image: url('tech.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  border: 8px solid rgb(0, 0, 0);
+  padding: 50px;
+  margin: 1px;
+  cursor: pointer;
+}
